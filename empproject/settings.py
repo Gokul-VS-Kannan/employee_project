@@ -77,11 +77,9 @@ WSGI_APPLICATION = 'empproject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'db3',
-        'USER': "root",
-        'PASSWORD': "",
-        'HOST':"localhost"
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME':  BASE_DIR / 'db.sqlite3',
+        
     }
 }
 
